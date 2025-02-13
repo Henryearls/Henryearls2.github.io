@@ -1,0 +1,150 @@
+/* style.css */
+
+/* General body styling with moody gradient */
+body {
+    background: linear-gradient(135deg, #0a0a0a 40%, #1e1e1e);
+    color: #d6d3cd;
+    font-family: 'Garamond', 'Times New Roman', serif;
+    line-height: 1.8;
+    margin: 40px;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+}
+
+/* Ethereal glow with slight blur for titles */
+h1, h2 {
+    color: #b13b3b;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-family: 'Cormorant Garamond', serif;
+    filter: blur(0.5px);  /* Subtle blur effect */
+    transition: filter 0.3s ease;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    letter-spacing: 1.5px;
+}
+
+/* Clear blur on hover to create an eerie reveal effect */
+h1:hover, h2:hover {
+    filter: blur(0px);
+}
+
+/* Flowing text blocks with soft blur */
+p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.2em;
+    background: rgba(10, 10, 10, 0.6);
+    padding: 20px;
+    border-left: 4px solid #b13b3b;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    filter: blur(0.8px);  /* Slightly blur body text */
+    transition: filter 0.4s ease-in-out;
+}
+
+/* Clear blur on hover for paragraphs */
+p:hover {
+    filter: blur(0px);
+}
+
+/* Navigation list with ethereal fade-in effect */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+li {
+    margin: 15px 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: blur(0.3px);  /* Very soft blur on links */
+}
+
+li:hover {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/* Dreamy, glowing link styles */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s ease, text-shadow 0.4s ease, filter 0.4s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4a90e2;
+    text-decoration: underline;
+    filter: blur(0px);  /* Clear blur on hover */
+}
+
+/* Golden accents for poem titles */
+em {
+    color: #ffdd57;
+    font-style: italic;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    filter: blur(0.4px);  /* Poetic blur on emphasized text */
+}
+
+/* Subtle background animation to simulate "breathing" */
+body {
+    animation: subtleFade 20s infinite alternate ease-in-out;
+}
+
+@keyframes subtleFade {
+    from {
+        background: linear-gradient(135deg, #0a0a0a 40%, #1e1e1e);
+    }
+    to {
+        background: linear-gradient(135deg, #141414 40%, #292929);
+    }
+}
+
+/* Ethereal
+
+/* Raven container */
+#raven {
+    position: fixed;
+    top: 10%;
+    left: -150px; /* Start off-screen */
+    width: 120px;
+    height: 80px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="%23000000" d="M42 8c-2 0-4 0-5 2-1 2-1 4 0 5-3-2-6-2-10-1-4 1-7 3-9 6-3-1-5 0-8 2 0 3 2 4 4 5-2 1-5 2-6 5 3 3 6 2 9 1-3 2-4 6-3 10 2 0 4-1 5-2 1 3 3 6 5 8-1 1-2 2-2 3 2 2 5 2 8 2-1-2-1-3 0-5 3 1 5 2 9 2-3-2-6-4-7-7 2 0 4 0 6-1s3-2 5-3c-1-3-3-6-5-8 2 1 5 2 7 1-2-3-6-5-10-5 2-1 4-3 5-5s2-4 2-6c-1-2-3-3-5-3z"/></svg>');
+    background-size: cover;
+    opacity: 0.6; /* Slight transparency for a ghostly feel */
+    transform: rotate(10deg);
+    animation: floatRaven 20s linear infinite;
+}
+
+/* Floating and moving animation */
+@keyframes floatRaven {
+    0% {
+        left: -150px;
+        top: 10%;
+        transform: scale(0.8) rotate(10deg);
+    }
+    50% {
+        top: 15%; /* Slight dip in flight */
+        transform: scale(1) rotate(5deg);
+    }
+    100% {
+        left: 110%;
+        top: 5%;
+        transform: scale(0.8) rotate(10deg);
+    }
+}

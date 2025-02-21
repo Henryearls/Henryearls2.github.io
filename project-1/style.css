@@ -1,105 +1,90 @@
 /* style.css */
 
-/* General body styling with moody gradient */
+/* General body styling with black and white theme */
 body {
-    background: linear-gradient(135deg, #0a0a0a 40%, #1e1e1e);
-    color: #d6d3cd;
-    font-family: 'Garamond', 'Times New Roman', serif;
-    line-height: 1.8;
+    background: #000000;  /* Solid black background */
+    color: #ffffff;  /* White text */
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.4;  /* Tighter line-height for larger text */
     margin: 40px;
-    padding: 20px;
-    letter-spacing: 0.5px;
+    padding: 40px;
+    letter-spacing: 1px;  /* Subtle letter-spacing */
+    text-align: justify;  /* Force justify for all text */
     overflow-x: hidden;
 }
 
-/* Ethereal glow with slight blur for titles */
+/* Large, bold header styling */
 h1, h2 {
-    color: #b13b3b;
-    text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    font-family: 'Cormorant Garamond', serif;
-    filter: blur(0.5px);  /* Subtle blur effect */
+    color: #ffffff;  /* White text */
+    text-align: left;  /* Left-aligned headers */
+    font-family: 'Source Sans Pro', sans-serif;
+    filter: blur(1px);  /* Light blur effect on headers */
     transition: filter 0.3s ease;
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+    font-size: 10em;  /* Much larger size for sculptural effect */
+    margin-bottom: 50px;
+    letter-spacing: 5px;
 }
 
 h2 {
-    font-size: 2em;
-    margin-top: 40px;
-    letter-spacing: 1.5px;
+    font-size: 7em;  /* Larger size for sculptural effect */
+    margin-top: 70px;
+    letter-spacing: 4px;
 }
 
-/* Clear blur on hover to create an eerie reveal effect */
-h1:hover, h2:hover {
-    filter: blur(0px);
-}
-
-/* Flowing text blocks with soft blur */
+/* Paragraph text with blur effect */
 p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 1.2em;
-    background: rgba(10, 10, 10, 0.6);
-    padding: 20px;
-    border-left: 4px solid #b13b3b;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    filter: blur(0.8px);  /* Slightly blur body text */
-    transition: filter 0.4s ease-in-out;
+    max-width: 100%; /* Full width for larger text */
+    margin: 30px auto;
+    font-size: 4.5em;  /* Much larger text */
+    color: #ffffff;  /* White text */
+    letter-spacing: 1px;  /* Subtle letter-spacing */
+    filter: blur(1px);  /* Light blur effect on paragraphs */
+    text-align: justify;  /* Force justify for paragraphs */
 }
 
-/* Clear blur on hover for paragraphs */
-p:hover {
-    filter: blur(0px);
+/* Increase size for Themes and Key Literary Devices section */
+#themes, #literary-devices {
+    font-size: 4.5em;  /* Matching the larger text size */
+    filter: blur(1px);  /* Blur effect for thematic sections */
+    margin: 30px auto;
 }
 
 /* Navigation list with ethereal fade-in effect */
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
-    margin-top: 30px;
+    text-align: left;  /* Left-aligned links */
+    margin-top: 60px;
 }
 
 li {
-    margin: 15px 0;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
-    filter: blur(0.3px);  /* Very soft blur on links */
+    margin: 30px 0;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
 }
 
 li:hover {
     opacity: 1;
-    filter: blur(0px);
 }
 
 /* Dreamy, glowing link styles */
 a {
-    color: #4a90e2;
+    color: #ffffff;  /* White links */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.4s ease, text-shadow 0.4s ease, filter 0.4s ease;
+    font-size: 4.5em;  /* Larger link text */
+    transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
 a:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px #4a90e2;
     text-decoration: underline;
-    filter: blur(0px);  /* Clear blur on hover */
 }
 
-/* Golden accents for poem titles */
-em {
-    color: #ffdd57;
-    font-style: italic;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-    filter: blur(0.4px);  /* Poetic blur on emphasized text */
-}
+/* Golden accents removed */
 
 /* Subtle background animation to simulate "breathing" */
 body {
@@ -108,16 +93,14 @@ body {
 
 @keyframes subtleFade {
     from {
-        background: linear-gradient(135deg, #0a0a0a 40%, #1e1e1e);
+        background: #000000;
     }
     to {
-        background: linear-gradient(135deg, #141414 40%, #292929);
+        background: #121212;
     }
 }
 
-/* Ethereal
-
-/* Raven container */
+/* Raven container (removed background and kept it black/white) */
 #raven {
     position: fixed;
     top: 10%;

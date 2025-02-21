@@ -1,62 +1,60 @@
-/* style.css */
 
-/* General body styling with black and white theme */
 body {
-    background: #000000;  /* Solid black background */
-    color: #ffffff;  /* White text */
+    background: #000000;  
+    color: #ffffff; 
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;  /* Tighter line-height for larger text */
+    line-height: 1.4;  
     margin: 40px;
     padding: 40px;
-    letter-spacing: 1px;  /* Subtle letter-spacing */
-    text-align: justify;  /* Force justify for all text */
+    letter-spacing: 1px; 
+    text-align: justify;  
     overflow-x: hidden;
 }
 
-/* Large, bold header styling */
+
 h1, h2 {
-    color: #ffffff;  /* White text */
-    text-align: left;  /* Left-aligned headers */
+    color: #ffffff;  
+    text-align: left;  
     font-family: 'Source Sans Pro', sans-serif;
-    filter: blur(1px);  /* Light blur effect on headers */
+    filter: blur(1px);  
     transition: filter 0.3s ease;
 }
 
 h1 {
-    font-size: 10em;  /* Much larger size for sculptural effect */
+    font-size: 10em; 
     margin-bottom: 50px;
     letter-spacing: 5px;
 }
 
 h2 {
-    font-size: 7em;  /* Larger size for sculptural effect */
+    font-size: 7em; 
     margin-top: 70px;
     letter-spacing: 4px;
 }
 
-/* Paragraph text with blur effect */
+
 p {
-    max-width: 100%; /* Full width for larger text */
+    max-width: 100%; 
     margin: 30px auto;
-    font-size: 4.5em;  /* Much larger text */
-    color: #ffffff;  /* White text */
-    letter-spacing: 1px;  /* Subtle letter-spacing */
-    filter: blur(1px);  /* Light blur effect on paragraphs */
-    text-align: justify;  /* Force justify for paragraphs */
+    font-size: 4.5em; 
+    color: #ffffff;  
+    letter-spacing: 1px; 
+    filter: blur(1px);  
+    text-align: justify;  
 }
 
-/* Increase size for Themes and Key Literary Devices section */
+
 #themes, #literary-devices {
-    font-size: 4.5em;  /* Matching the larger text size */
-    filter: blur(1px);  /* Blur effect for thematic sections */
+    font-size: 4.5em;  
+    filter: blur(1px);  
     margin: 30px auto;
 }
 
-/* Navigation list with ethereal fade-in effect */
+
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: left;  /* Left-aligned links */
+    text-align: left;  
     margin-top: 60px;
 }
 
@@ -70,7 +68,7 @@ li:hover {
     opacity: 1;
 }
 
-/* Dreamy, glowing link styles */
+
 a {
     color: #ffffff;  /* White links */
     text-decoration: none;
@@ -84,9 +82,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Golden accents removed */
 
-/* Subtle background animation to simulate "breathing" */
 body {
     animation: subtleFade 20s infinite alternate ease-in-out;
 }
@@ -100,7 +96,7 @@ body {
     }
 }
 
-/* Raven container (removed background and kept it black/white) */
+
 #raven {
     position: fixed;
     top: 10%;
@@ -114,7 +110,7 @@ body {
     animation: floatRaven 20s linear infinite;
 }
 
-/* Floating and moving animation */
+
 @keyframes floatRaven {
     0% {
         left: -150px;
